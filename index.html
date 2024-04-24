@@ -21,26 +21,259 @@
         integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- slick carousel  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animate CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- font gg -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <!-- CSS  -->
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <p>hello mn</p>
-    <header>
-        <!-- place navbar here -->
+    <!-- HEADER  -->
+    <header class="position-absolute top-0 start-0 z-2 w-100">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <i class="fa-solid fa-align-right text-success fs-3"></i>
+                        <span class=" text-white fs-3 fw-bold mb-0">Corp Vision</span>
+                        <p class=" text-white mb-0">Vision to your future</p>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SERVICES</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-secondary" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    PAGES
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
+                                    <li><a class="dropdown-item" href="#">404 PAGE</a></li>
+                                    <li><a class="dropdown-item" href="#">LANDING PAGE</a></li>
+                                    <li><a class="dropdown-item" href="#"> ELEMENTS PAGE</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                        <div class="header-search">
+                            <div class="control me-3">
+                                <div class="btn_search">
+                                    <i class="fa fa-search icon-material-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main></main>
+
+
+
+    <!-- CAROUSEL  -->
+    <section class="carousel">
+        <div class="service_carousel vh-100">
+            <div class="carousel-item h-100 active">
+                <img src="./img/b1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="animate__animated animate__flipInX animate__delay-1s">We will solve your issues
+                        <br> our vision to your future
+                    </h5>
+                    <p class="animate__animated animate__fadeInDown">Lorem ipsum dolor sit amet, elit, sed do
+                        eiusmod ut labore et
+                        dolore <br> magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+                    <a href="#" class="text-white animate__animated animate__fadeInUp animate__delay-1s">Learn
+                        More</a>
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <img src="./img/b2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="animate__animated animate__fadeInDown animate__delay-1s">Embracing success do our
+                        <br> best, need best advice
+                    </h5>
+                    <p class="animate__animated animate__fadeInDown">Lorem ipsum dolor sit amet, elit, sed do
+                        eiusmod ut labore et
+                        dolore <br> magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+                    <a href="#" class="text-white animate__animated animate__fadeInDown animate__delay-1s">Get
+                        Started</a>
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <img src="./img/b3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="animate__animated animate__fadeInUp animate__delay-1s">Digital transformation
+                        <br> driven by technology
+                    </h5>
+                    <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, elit, sed do
+                        eiusmod ut labore et
+                        dolore <br> magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+                    <a href="#" class="text-white animate__animated animate__fadeInDown animate__delay-1s">Learn
+                        More</a>
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <img src="./img/b4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="animate__animated animate__flipInX animate__delay-1s">For those who believe in
+                        <br> leaving a mark
+                    </h5>
+                    <p class="animate__animated animate__fadeInDown">Lorem ipsum dolor sit amet, elit, sed do
+                        eiusmod ut labore et
+                        dolore <br> magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+                    <a href="#" class="text-white animate__animated animate__fadeInUp animate__delay-1s">Contact
+                        Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Us  -->
+    <section class="AboutUs" id="about">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row align-items-center">
+                <div class="about_content col-lg-6">
+                    <div>
+                        <span class="active">About Us</span>
+                        <h3>We make the best strategies for <br> you, Enhancing your success</h3>
+                        <p class="text_about text-secondary fw-normal mt-md-4 mt-3">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit,
+                            sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud ullamco laboris nisi ut ex ea.</p>
+                        <ul class="pt-lg-2 mt-2">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-circle-check me-2"></i>
+                                    <span> UI/UX Design and Development</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-circle-check me-2"></i>
+                                    <span>Branding Design and Identity</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-circle-check me-2"></i>
+                                    <span>Mobile App Design and Development</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about_img col-lg-6 mt-lg-0 mt-md-5 mt-4">
+                    <div class="row position-relative">
+                        <div class="col-6 img_border">
+                            <img class="img-fluid rounded-3" src="./img/a.jpg" alt="">
+                        </div>
+                        <div class="col-6 mt-4">
+                            <img class="img-fluid rounded-3 mb-md-3 mb-2" src="./img/c1.jpg" alt="">
+                            <img class="img-fluid rounded-3 mt-md-3" src="./img/c4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features  -->
+    <section class="features py-5">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="row align-items-center">
+                <div class="features_content col-lg-6">
+                    <div class="col-lg-10 features_left pr-lg-5">
+                        <h5 class="title_small">EVERY DAY BRINGS NEW CHALLENGES</h5>
+                        <h3 class="title_big mb-4">Creative agency focused on vision, product and people</h3>
+                        <p class="features_text text-secondary fw-normal">Aurabitur id gravida risus. Fusce eget ex
+                            fermentum, ultricies nisi ac sed, lacinia est.
+                            Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                            elit. Suspendisse non init magnaa velit efficitur, dolor eget ex fermentum.</p>
+                        <a href="#about" class="btn btn-style btn-primary mt-lg-5 mt-4">Discover More</a>
+                    </div>
+                </div>
+                <div class="features_img col-lg-6 mt-lg-0 mt-md-5 mt-4 justify-content-center">
+                    <div class="features_right">
+                        <div class="features_item">
+                            <div class="icon">
+                                <img src="./img/icon1.png" alt="">
+                            </div>
+                            <h4>Our Process</h4>
+                        </div>
+                        <div class="features_item">
+                            <div class="icon">
+                                <img src="./img/icon2.png" alt="">
+                            </div>
+                            <h4>How We Help</h4>
+                        </div>
+                        <div class="features_item">
+                            <div class="icon">
+                                <img src="./img/icon3.png" alt="">
+                            </div>
+                            <h4>UI/UX Design</h4>
+                        </div>
+                        <div class="features_item">
+                            <div class="icon">
+                                <img src="./img/icon4.png" alt="">
+                            </div>
+                            <h4>Creative Ideas</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <footer>
-        <!-- place footer here -->
     </footer>
+
+
+    <!--JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.js"
+        integrity="sha512-FruHrHbK/kxrB8bV0sXKTaPazRf3Nz5gFVtdV0INaL+XZ6ehZtcuiGe8ZcJkvOcnPNBcJzZFAnkgdl7PmepNnA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -49,6 +282,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
+    <!-- Slick JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.service_carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></button>'
+            });
+        });
+    </script>
+
 </body>
 
 </html>
